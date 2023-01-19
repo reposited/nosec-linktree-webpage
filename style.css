@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=IBM+Plex+Mono:wght@600&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    list-style-type: none;
+    user-select: none;
+    overflow: hidden
+}
+
+html {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    margin: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+.animatedimg {
+    /* filter: grayscale(); /*color change */
+    width: 160px;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 8s ease-in-out forwards infinite;
+    animation: swinging 8s ease-in-out forwards infinite;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(0deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    0%{-webkit-transform: rotate(0deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-5deg)}
+    0%{transform: rotate(0deg);}
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body li h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.list-imgs {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    filter: invert(); /*color change*/
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 45px;
+}
+
+.icon-img {
+    padding: 25px;
+}
+
+.icon-img-middle {
+    padding-left: 2px;
+}
+
+.icon-img:hover {
+    transform: scale(0.95);
+}
+
+.icon-img-middle:hover {
+    transform: scale(0.95);
+}
+
+.imgcenter {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+.modal {
+    text-align: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: black;
+}
+
+.btncontainer {
+    padding-top: 50px;
+}
+  
+.btn {
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(0.95); 
+}
+  
