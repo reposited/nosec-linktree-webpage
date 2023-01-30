@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #ffffff;
     list-style-type: none;
     user-select: none;
     overflow: hidden
@@ -59,14 +58,21 @@ body li h1 {
     color: white;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
-h4 {
+.btcwallet {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 14px;
+    padding: 5px;
 }
 
+.btcwallet:hover {
+    cursor: pointer;
+    color: white;
+}
 
 .list-imgs {
     align-items: center;
@@ -120,6 +126,7 @@ h4 {
 }
   
 .btn {
+    color: white;
     padding: 10px;
     appearance: none;
     -webkit-appearance: none;
